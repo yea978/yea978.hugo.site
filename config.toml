@@ -1,5 +1,5 @@
 # config.toml
-baseurl = "yea978.github.io"
+baseurl = "https://yea978.github.io"
 title = "yea978"
 languageCode = "en-US"
 MetaDataFormat = "toml"
