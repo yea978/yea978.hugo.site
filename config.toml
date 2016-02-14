@@ -58,20 +58,20 @@ PaginatePath = "/"
     [[menu.main]]
     identifier = "home"
     name       = "home"
-    url        = "/"
+    url        = ""
     weight     = 0
     pre       = "<i class='fa fa-home'></i>"
     
     [[menu.main]]
     identifier = "post"
     name       = "post"
-    url        = "/post/"
+    url        = "post/"
     weight     = 0
     pre       = "<i class='fa fa-folder '></i>"
 
     [[menu.main]]
     identifier = "about"
     name       = "about"
-    url        = "/about/"
+    url        = "about/"
     weight     = 1
     pre       = "<i class='fa fa-leaf'></i>"
