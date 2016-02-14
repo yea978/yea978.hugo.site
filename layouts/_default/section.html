@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<section id="article-listing">
+  <div>
+    {{ range .Data.Pages.GroupByDate "2006" }}
+            <h2>{{ .Key }}</h2>
+                <ul id="list">
+                    {{ range .Pages }}
+                        {{ .Render "li"}}
+                    {{ end }}
+                </ul>
+            {{ end }}
+  </div>
+</section>
+{{ partial "footer.html" . }}

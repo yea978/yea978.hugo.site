@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+
+<section id="article-listing">
+  <div>
+   {{ $data := .Data }}
+    {{ range $key,$value := .Data.Terms.ByCount }}
+    <h2 class="term-title"><a href="{{ $value.Name | urlize }}"> {{ $value.Name }} </a>  {{ $value.Count }} </h2>
+    {{ end }}
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
