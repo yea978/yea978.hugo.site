@@ -3,8 +3,7 @@ date = "2016-02-14T00:00:00+08:00"
 title = "HUGO主题结构，页面与模板对应关系"
 description = ""
 tags = ["HUGO"]
-categories = ["Programing Language"]
-keywords = []
+topics = ["Hugo Theme"]
 +++
 
 简单修改了一下Slender这个Hugo主题，主要添加了分类的页面，在此记录一下相关模板及最后生成页面的对应关系：
@@ -23,7 +22,7 @@ keywords = []
 <!--more-->
 生成静态页面之后，网站的结构如下：
 
->
+
 ```
 C:.
 ├─1
@@ -46,7 +45,7 @@ C:.
 
 layout目录结构：
 
->
+
 ```
 C:.
 ├─partials

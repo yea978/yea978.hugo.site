@@ -1,7 +1,12 @@
 +++
+title = ""
 description = ""
-tags = []
-categories = []
-keywords = []
-type = "post"
+tags = [
+    "go",
+    "development",
+]
+topics = [
+    "Development",
+    "golang",
+]
 +++

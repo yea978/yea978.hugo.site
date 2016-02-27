@@ -1,17 +1,16 @@
-# config.toml
-baseurl = "https://yea978.github.io"
-title = "yea978"
-languageCode = "en-US"
-MetaDataFormat = "toml"
-paginate = 7
-PaginatePath = "/"
+baseurl = "http://yea978.github.io/"
+title = "thorn twisting"
+languageCode = "en-us"
+disqusShortname = "yea978"
+copyright = "Copyright (c) 2015 - 2016, Yea978; all rights reserved."
+#MetaDataFormat = "yaml"
 
 [author]
     name = "yea978"
- 
-#[indexes]
-#    tag = "tags"
-#    topic = "topics"
+
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
 
 [permalinks]
 
@@ -20,58 +19,3 @@ PaginatePath = "/"
 
     # Permalink format for blog posts.
     # post = "/article/:slug/"
-
-[params]
-
-    # Change the color scheme of Slender.
-    # See above for preview and list of color schemes.
-    colorscheme = "white"
-
-    # Tagline; HTML accepted here. Keep it concise.
-    tagline = "未定义姿态"
-
-    # Footer; Markdown accepted here.
-    footer = "Copyright 2016 &copy; Yea978"
-
-    # Description and keywords for <meta> tags.
-    # Remember to set this for your main page.
-    # This will be overridden by whatever is set by the page or post,
-    # defined by `description` and `keywords` variables in the front matter
-    # of the markdown file.
-    description = "Default Page Description"
-    keywords = "default,page,keywords"
-
-    # Social links, must be full URLs (e.g. https://github.com/CrimsonRay/).
-    # Remove, comment, or leave blank any field to leave them out.
-    email = "mailto:your-email"
-    github = "https://github.com/yea978"
-    weixin = "https://github.com/yea978"
-
-    # Google Analytics
-    # Remove, comment, or leave it blank if you don't have one.
-    ganalytics = "UA-73711103-1"
-
-[menu]
-
-    # Menu for the nav bar.
-    # There must always be one item present (e.g. home).
-    [[menu.main]]
-    identifier = "home"
-    name       = "home"
-    url        = ""
-    weight     = 0
-    pre       = "<i class='fa fa-home'></i>"
-    
-    [[menu.main]]
-    identifier = "post"
-    name       = "post"
-    url        = "post/"
-    weight     = 0
-    pre       = "<i class='fa fa-folder '></i>"
-
-    [[menu.main]]
-    identifier = "about"
-    name       = "about"
-    url        = "about/"
-    weight     = 1
-    pre       = "<i class='fa fa-leaf'></i>"

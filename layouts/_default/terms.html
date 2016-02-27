@@ -1,12 +1,17 @@
 {{ partial "header.html" . }}
+<body lang="en">
+{{ partial "subheader.html" . }}
 
-<section id="article-listing">
+<section id="main">
   <div>
+   <h1 id="title">{{ .Title }}</h1>
    {{ $data := .Data }}
     {{ range $key,$value := .Data.Terms.ByCount }}
-    <h2 class="term-title"><a href="{{ $value.Name | urlize }}"> {{ $value.Name }} </a>  {{ $value.Count }} </h2>
+    <h2><a href="{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> {{ $value.Count }} </h2>
     {{ end }}
   </div>
 </section>
+
+<aside id="meta"> </aside>
 
 {{ partial "footer.html" . }}

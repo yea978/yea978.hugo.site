@@ -1,12 +1,15 @@
 {{ partial "header.html" . }}
+<body lang="en">
+{{ partial "subheader.html" . }}
 
-<section id="article-listing">
+<section id="main">
   <div>
+   <h1 id="title">{{ .Title }}</h1>
     {{ range .Data.Pages }}
         {{ .Render "summary"}}
     {{ end }}
   </div>
 </section>
 
+<aside id="meta"> </aside>
 {{ partial "footer.html" . }}
-

@@ -5,12 +5,13 @@
 <section id="main">
   <div>
    <h1 id="title">{{ .Title }}</h1>
-    {{ range .Data.Pages }}
-        {{ .Render "summary"}}
-    {{ end }}
+        <ul id="list">
+            {{ range .Data.Pages }}
+                {{ .Render "summary"}}
+            {{ end }}
+        </ul>
   </div>
 </section>
 
 <aside id="meta"> </aside>
-
 {{ partial "footer.html" . }}
