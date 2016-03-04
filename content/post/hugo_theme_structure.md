@@ -1,12 +1,12 @@
 +++
 date = "2016-02-14T00:00:00+08:00"
-title = "HUGO主题结构，页面与模板对应关系"
+title = "HUGO主题结构"
 description = ""
 tags = ["HUGO"]
 topics = ["Hugo Theme"]
 +++
 
-简单修改了一下Slender这个Hugo主题，主要添加了分类的页面，在此记录一下相关模板及最后生成页面的对应关系：
+**初次使用Hugo，记录一下相关模板及最后生成页面的对应关系：**
 
 涉及模板：
 
@@ -15,9 +15,9 @@ topics = ["Hugo Theme"]
 * 内容列表模板
 * 分类模板
 
-原始主题：[Slender](http://crimsonray.github.io/slender/)
+原始主题：[Slender][1]
 
-参考主题：[spf13](https://github.com/spf13/spf13.com)
+参考主题： [Spf13][2]
 
 <!--more-->
 生成静态页面之后，网站的结构如下：
@@ -102,3 +102,6 @@ Hugo中内容的最主要视图就是单一视图，每一个Markdown文件都�
 
 * /layouts/taxonomy/**SINGULAR**.terms.html
 * /layouts/_default/terms.html
+
+[1]:http://crimsonray.github.io/slender/ "http://crimsonray.github.io/slender/"
+[2]:https://github.com/spf13/spf13.com/ "https://github.com/spf13/spf13.com/" 
